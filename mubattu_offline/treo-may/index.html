@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Treo Máy và Auto - MU Bất Tử</title>
+<meta name="description" content="Hướng dẫn treo máy MU Bất Tử SS6: bật Auto Helper bằng phím Z, cài tấn công, nhặt đồ, Tự động VIP mua theo giờ, bản đồ không cho auto, treo máy nhận quà online.">
+<link rel="preload" href="../ss6-assets/font/BeVietnamPro-400-latin.woff2" as="font" type="font/woff2" crossorigin media="(min-width:861px)"><link rel="preload" href="../ss6-assets/font/BeVietnamPro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin media="(min-width:861px)"><style>@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 400;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-400-vietnamese.woff2) format('woff2');  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 400;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-400-latin-ext.woff2) format('woff2');  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 400;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-400-latin.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 600;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-600-vietnamese.woff2) format('woff2');  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 600;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-600-latin-ext.woff2) format('woff2');  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 600;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-600-latin.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 700;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-700-vietnamese.woff2) format('woff2');  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 700;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-700-latin-ext.woff2) format('woff2');  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {  font-family: 'Be Vietnam Pro';  font-style: normal;  font-weight: 700;  font-display: swap;  src: url(../ss6-assets/font/BeVietnamPro-700-latin.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-cyrillic-ext.woff2) format('woff2');  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-cyrillic.woff2) format('woff2');  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-greek-ext.woff2) format('woff2');  unicode-range: U+1F00-1FFF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-greek.woff2) format('woff2');  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-math.woff2) format('woff2');  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-vietnamese.woff2) format('woff2');  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-latin-ext.woff2) format('woff2');  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 600;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-latin.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-cyrillic-ext.woff2) format('woff2');  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-cyrillic.woff2) format('woff2');  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-greek-ext.woff2) format('woff2');  unicode-range: U+1F00-1FFF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-greek.woff2) format('woff2');  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-math.woff2) format('woff2');  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-vietnamese.woff2) format('woff2');  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-latin-ext.woff2) format('woff2');  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {  font-family: 'Noto Serif';  font-style: normal;  font-weight: 700;  font-stretch: 100%;  font-display: swap;  src: url(../ss6-assets/font/NotoSerif-600-latin.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:"BVP du phong win";src:local("Segoe UI"),local("SegoeUI");font-weight:100 500;size-adjust:108.38%;ascent-override:92.26%;descent-override:24.45%;line-gap-override:0%}@font-face{font-family:"BVP du phong win";src:local("Segoe UI Bold"),local("SegoeUI-Bold");font-weight:600 900;size-adjust:105.11%;ascent-override:95.13%;descent-override:25.21%;line-gap-override:0%}@font-face{font-family:"BVP du phong";src:local("Arial"),local("ArialMT"),local("Liberation Sans"),local("Arimo");font-weight:100 500;size-adjust:107.28%;ascent-override:93.22%;descent-override:24.70%;line-gap-override:0%}@font-face{font-family:"BVP du phong";src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold"),local("Arimo Bold");font-weight:600 900;size-adjust:103.92%;ascent-override:96.22%;descent-override:25.50%;line-gap-override:0%}@font-face{font-family:"NS du phong";src:local("Times New Roman Bold"),local("TimesNewRomanPS-BoldMT"),local("Liberation Serif Bold"),local("Tinos Bold");font-weight:100 900;size-adjust:109.28%;ascent-override:97.82%;descent-override:26.81%;line-gap-override:0%}</style><style>
+:root{--c-vang:#e2c88f;--c-vang-hi:#efdcb2;--c-kem:#e2d8c6;--c-xam:#a9a095;--f-tt:"Noto Serif","NS du phong",Georgia,"Times New Roman",serif;--f-nd:"Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}html{overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;background-color:#070a18;background-image:url("../ss6-assets/anh/pl-dau.webp"),url("../ss6-assets/anh/pl-cuoi.webp"),url("../ss6-assets/anh/pl-than.webp");background-position:center top,center bottom,center top;background-size:max(100%,1100px) auto;background-repeat:no-repeat,no-repeat,repeat-y;color:var(--c-kem);font:400 16px/1.65 var(--f-nd);overflow-x:clip;position:relative}
+@media(max-width:899px){body{background-image:url("../ss6-assets/anh/pl-dt-dau.webp"),url("../ss6-assets/anh/pl-dt-cuoi.webp"),url("../ss6-assets/anh/pl-dt-than.webp");background-size:100% auto}}
+body>*{position:relative;z-index:1}
+img{max-width:100%;height:auto}
+a{color:var(--c-vang-hi)}a:focus-visible,button:focus-visible{outline:2px solid #ffd77a;outline-offset:3px}
+.nv{position:fixed;bottom:0;z-index:0;height:min(82vh,31vw);width:auto;pointer-events:none;display:none;filter:saturate(.9) drop-shadow(0 0 16px rgba(0,0,0,.5));-webkit-mask-image:linear-gradient(to top,transparent 0,#000 14%);mask-image:linear-gradient(to top,transparent 0,#000 14%)}
+body>.nv{position:fixed;z-index:0}
+.nv-t{left:0}.nv-p{right:0}.nv.lat{transform:scaleX(-1)}
+@media(min-width:1640px){body>.nv{display:block}}
+.dau{max-width:none;margin:0;padding:8px max(16px,calc((100% - 1180px)/2 + 16px));display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+body>.dau{position:sticky;top:0;z-index:30;background:linear-gradient(to bottom,rgba(6,9,22,.94),rgba(6,9,22,.78));-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid rgba(226,200,143,.28);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.dau .logo{display:block;width:min(170px,46vw)}.dau .logo img{display:block;width:100%;height:auto;filter:saturate(.9)}
+.dau nav{display:flex;gap:6px;flex-wrap:wrap}
+.dau nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font-weight:600;font-size:14px;text-decoration:none;color:var(--c-vang-hi);border:1px solid rgba(226,200,143,.3);border-radius:6px;background:rgba(6,9,22,.55);text-shadow:0 1px 3px #000}
+.dau nav a:hover,.dau nav a[aria-current]{background:rgba(226,200,143,.18);border-color:rgba(226,200,143,.6)}
+.tieu{max-width:900px;margin:12px auto 0;text-align:center;padding:0 16px}
+.tieu h1{margin:0;font:700 clamp(28px,5.4vw,48px)/1.15 var(--f-tt);text-transform:uppercase;letter-spacing:.04em;color:var(--c-vang);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.tieu .hl{margin:8px 0 0;color:#d8cdb9;font-size:16px;text-shadow:0 1px 3px #000}
+.dai{height:34px;margin:8px auto;background:url("../ss6-assets/anh/dk-chan-trang-dai-ngan.webp") center/auto 100% no-repeat}
+.the,.khung{background:rgba(6,9,22,.82);border:14px solid transparent;border-image:url("../ss6-assets/anh/dk-khung-mong.webp") 150 fill/14px stretch;filter:saturate(.88) contrast(.94)}
+.khung{border-width:26px;border-image:url("../ss6-assets/anh/dk-khung-khoi.webp") 150 fill/26px stretch;box-shadow:0 0 22px rgba(90,120,220,.14)}
+.sap{max-width:940px;margin:8px auto 0;padding:0 14px}
+.sap .the{display:flex;align-items:center;justify-content:center;gap:8px 22px;flex-wrap:wrap;padding:2px 8px}
+.sap .nhan{font:700 15px var(--f-tt);letter-spacing:.12em;color:var(--c-vang);text-transform:uppercase}
+.sap .moc{font:600 15px var(--f-nd);color:#efe5d2;white-space:nowrap}
+.sap .moc+.moc{padding-left:22px;border-left:1px solid rgba(226,200,143,.35)}
+.nut-anh{position:relative;display:block;border:0;padding:0;background:none;cursor:pointer;text-decoration:none;color:inherit;font:inherit;filter:saturate(.84) contrast(.9) brightness(.96)}
+.nut-anh img{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity .12s}
+.nut-anh img.t{opacity:1}
+.nut-anh:hover img.h{opacity:1}.nut-anh:hover img.t{opacity:0}
+.nut-anh:active img.b{opacity:1}.nut-anh:active img.h,.nut-anh:active img.t{opacity:0}
+.nut-dk{width:196px;aspect-ratio:440/165;flex:0 0 auto}
+.chu-nut{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 12px;text-align:center;font:800 14.5px/1.15 var(--f-nd);letter-spacing:.03em;color:#fff7dc;text-shadow:0 1px 2px #1a0c02,0 0 8px rgba(26,12,2,.85)}
+.chinh{max-width:1060px;margin:14px auto 0;padding:0 14px}
+.luoi{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:24px;align-items:center}
+.luoi.dao .may{order:2}
+.luoi.dt{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}.luoi.dt.dao{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr)}
+.luoi.mot{grid-template-columns:minmax(0,1fr);gap:14px}
+.may{margin:0;display:flex;justify-content:center}
+.may img{display:block;width:100%;max-width:580px;filter:drop-shadow(0 12px 20px rgba(0,0,0,.55))}
+.luoi.mot .may img{max-width:760px}
+.may-dt img{max-width:640px}
+.tt{min-width:0}
+.tt h2{margin:0 0 6px;text-align:center;font:700 clamp(19px,2.6vw,24px)/1.3 var(--f-tt);text-transform:uppercase;letter-spacing:.04em;color:var(--c-vang);text-shadow:0 1px 3px rgba(0,0,0,.55)}
+.buoc{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.buoc li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:center;padding:9px 12px;background:rgba(226,200,143,.06);border:1px solid rgba(226,200,143,.22);border-radius:6px}
+.buoc .so{width:40px;height:40px;display:grid;place-items:center;font:700 17px var(--f-tt);color:#2a1a05;background:radial-gradient(circle at 35% 30%,#f6e3b0,#c79a45 70%);border:2px solid #7a5420;border-radius:50%;box-shadow:0 0 10px rgba(230,180,80,.3)}
+.buoc b{display:block;font:700 16px/1.35 var(--f-nd);color:#f1e3c1}
+.buoc span.m{display:block;margin-top:2px;font-size:13.5px;line-height:1.5;color:#d4c9b6}
+.luoi.mot .buoc{grid-template-columns:repeat(3,minmax(0,1fr))}
+.luoi.mot .buoc li{grid-template-columns:1fr;justify-items:center;text-align:center;padding:12px 10px}
+.tai-mo{position:relative;display:block;width:min(100%,250px);margin:12px auto 0;aspect-ratio:212/60}
+.tai-mo img{display:block;width:100%;height:100%;filter:grayscale(1) brightness(.62) contrast(.9);opacity:.8}
+.luoi.mot .tai-mo{margin:2px auto 0}
+.ghi{margin:8px 0 0;text-align:center;font-size:13px;line-height:1.5;color:#cfc4b0}
+.gioi{margin:0 0 4px;text-align:center;font-size:14px;color:#d8cdb9}
+.tai{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:920px;margin:18px auto 0;padding:0 14px;position:relative;z-index:6}
+.bo-nut{display:block;min-height:44px;transition:filter .12s,transform .12s}
+.bo-nut img{display:block;width:100%;height:auto}
+.bo-nut:hover{filter:brightness(1.15)}.bo-nut:active{transform:translateY(1px);filter:brightness(.85)}
+.bo-nut[aria-current]{filter:saturate(1) contrast(1) brightness(1.12) drop-shadow(0 0 9px rgba(255,205,110,.85));transform:translateY(-2px)}
+.chan{max-width:980px;margin:26px auto 0;padding:10px 12px 40px;text-align:center;font-size:13px;color:#b7ad9f;text-shadow:0 1px 3px #000}
+.chan .bo-chan{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;max-width:none;width:100%;margin:8px auto 12px}
+.chan .bo-chan img{height:auto}.chan .l{width:min(250px,56vw)}.chan .i{width:56px}
+.chan a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px}
+@media(max-width:900px){.luoi,.luoi.dao,.luoi.dt,.luoi.dt.dao{grid-template-columns:minmax(0,1fr)}.luoi.dao .may{order:0}.may-dt img{max-width:440px}}
+@media(max-width:700px){.dau{padding:6px 8px}.dau .logo{display:none}.dau nav{width:100%;flex-wrap:nowrap;gap:5px}.dau nav a{flex:1 1 0;min-width:0;justify-content:center;text-align:center;padding:0 4px;font-size:12px;line-height:1.25}
+ .tai{grid-template-columns:1fr 1fr;gap:10px}.luoi.mot .buoc{grid-template-columns:minmax(0,1fr)}.luoi.mot .buoc li{grid-template-columns:40px minmax(0,1fr);justify-items:start;text-align:left}
+ .sap .moc+.moc{padding-left:0;border-left:0}.khung{border-width:18px;border-image-width:18px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* ban 21/10: nut chinh man dau, loi hay gap, cau hinh */
+.nut-dau{max-width:940px;margin:8px auto 0;padding:0 14px}
+.nut-dau .the{display:flex;align-items:center;justify-content:center;gap:12px 26px;flex-wrap:wrap;padding:8px 10px}
+.nut-chinh{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none}
+.nut-chinh img{display:block;width:min(300px,72vw);height:auto}
+.nut-chinh b{font:700 15px/1.3 var(--f-nd);color:#f1e3c1;text-shadow:0 1px 3px #000}
+a.nut-chinh:hover img{filter:brightness(1.15) drop-shadow(0 0 10px rgba(255,205,110,.7))}
+.nut-gia-lap{display:block;margin:6px auto 0;text-align:center;font:600 14px var(--f-nd);color:#f6dc8f;text-decoration:underline;text-underline-offset:3px}
+.nut-chinh.cho img{filter:grayscale(1) brightness(.62) contrast(.9);opacity:.8}
+.nut-chinh .trang-thai{font:700 13px/1.3 var(--f-nd);color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46);border-radius:999px;padding:3px 12px}
+.nut-dau .ghi{margin-top:6px}
+.tt .mot-tk{margin:10px 0 0;text-align:center;font:700 14.5px var(--f-nd);color:var(--c-vang-hi)}
+.phu-luc{max-width:1060px;margin:14px auto 0;padding:0 14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.phu-luc .the{padding:6px 10px 10px}
+.phu-luc h2{margin:0 0 6px;text-align:center;font:700 18px/1.3 var(--f-tt);text-transform:uppercase;letter-spacing:.04em;color:var(--c-vang)}
+.loi{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.loi li{padding:7px 10px;background:rgba(226,200,143,.06);border:1px solid rgba(226,200,143,.2);border-radius:6px}
+.loi b{display:block;font:700 14.5px/1.35 var(--f-nd);color:#f1e3c1}
+.loi span{display:block;font-size:13.5px;line-height:1.5;color:#d4c9b6}
+.ch{width:100%;border-collapse:collapse;font-size:14px}
+.ch th,.ch td{padding:6px 8px;border-bottom:1px solid rgba(226,200,143,.18);text-align:left}
+.ch th{width:38%;color:#c9bcab;font-weight:600}
+.ch-cho{margin:4px 0 0;text-align:center;font-size:14px;color:#cfc4b0}
+@media(max-width:700px){.phu-luc{grid-template-columns:minmax(0,1fr)}}
+.minh-hoa{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.minh-hoa img{display:block;height:auto;width:calc(50% - 3px);min-width:0;flex:1 1 0;max-width:220px;border:1px solid rgba(226,200,143,.35);border-radius:4px}
+
+/* trang con thong tin / lo trinh */
+.muc{max-width:1060px;margin:14px auto 0;padding:0 14px}
+.muc>.the{padding:8px 14px 14px}
+.muc h2{margin:0 0 4px;text-align:center;font:700 clamp(19px,2.6vw,24px)/1.3 var(--f-tt);text-transform:uppercase;letter-spacing:.04em;color:var(--c-vang);text-shadow:0 1px 3px rgba(0,0,0,.55)}
+.muc .phu{margin:0 0 10px;text-align:center;font-size:14px;color:#cfc4b0}
+.so-lieu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.so-lieu li{padding:10px 8px;text-align:center;background:rgba(226,200,143,.06);border:1px solid rgba(226,200,143,.22);border-radius:6px}
+.so-lieu b{display:block;font:700 19px/1.25 var(--f-tt);color:#f3dfa6}
+.so-lieu span{display:block;margin-top:3px;font-size:13px;line-height:1.4;color:#d4c9b6}
+.luoi-the{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.luoi-the li{padding:10px 12px;background:rgba(226,200,143,.06);border:1px solid rgba(226,200,143,.22);border-radius:6px}
+.luoi-the b{display:block;font:700 15.5px/1.35 var(--f-nd);color:#f1e3c1}
+.luoi-the span{display:block;margin-top:3px;font-size:13.5px;line-height:1.55;color:#d4c9b6}
+.luoi-the em{display:inline-block;margin-top:2px;font-style:normal;font-size:12px;color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46);border-radius:999px;padding:1px 9px}
+.hai{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1060px;margin:14px auto 0;padding:0 14px}
+.hai .muc{margin:0;padding:0}.hai .muc>.the{height:100%}
+.chot{margin:10px 0 0;text-align:center;font-size:14px;line-height:1.55;color:#efe2c4}
+.ch.ba th{width:auto}.ch td,.ch th{vertical-align:top}
+.xem{display:flex;justify-content:center;margin-top:10px}
+.xem a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;font:700 14px var(--f-nd);text-decoration:none;color:var(--c-vang-hi);border:1px solid rgba(226,200,143,.45);border-radius:6px;background:rgba(6,9,22,.6)}
+.xem a:hover{background:rgba(226,200,143,.18)}
+.moc-lt{list-style:none;margin:6px 0 0;padding:0 0 0 30px;position:relative;display:grid;gap:12px}
+.moc-lt::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(#c99a46,rgba(201,154,70,.25))}
+.moc-lt li{position:relative;padding:12px 14px;background:rgba(226,200,143,.06);border:1px solid rgba(226,200,143,.22);border-radius:6px}
+.moc-lt li::before{content:"";position:absolute;left:-26px;top:16px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f6e3b0,#c79a45 70%);border:2px solid #7a5420}
+.moc-lt li.dang::before{box-shadow:0 0 0 4px rgba(242,212,138,.25),0 0 14px rgba(255,205,110,.8)}
+.moc-lt .ngay{display:inline-block;font:700 13px/1.3 var(--f-nd);color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46);border-radius:999px;padding:2px 10px}
+.moc-lt b{display:block;margin-top:5px;font:700 18px/1.3 var(--f-tt);color:#f3dfa6}
+.moc-lt span.m{display:block;margin-top:3px;font-size:14px;line-height:1.55;color:#d4c9b6}
+.moc-lt .xem{justify-content:flex-start}
+.qua{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.qua li{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 8px;text-align:center;background:radial-gradient(circle at 50% 38%,rgba(242,212,138,.16),rgba(226,200,143,.04) 70%);border:1px solid rgba(226,200,143,.25);border-radius:6px}
+.qua img{display:block;width:auto;height:96px;max-width:100%;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(0,0,0,.55))}
+.qua b{font:700 14px/1.35 var(--f-nd);color:#f1e3c1}
+@media(max-width:900px){.so-lieu{grid-template-columns:repeat(2,minmax(0,1fr))}.hai{grid-template-columns:minmax(0,1fr)}}
+
+.lb-img{cursor:zoom-in}.lb-img:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}
+.lb{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(4,3,8,.92);cursor:zoom-out}
+.lb[hidden]{display:none}
+.lb img{display:block;max-width:96vw;max-height:92vh;width:auto;height:auto;object-fit:contain;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.7)}
+.lb-x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:1px solid rgba(226,200,143,.6);border-radius:50%;background:rgba(6,9,22,.85);color:#f6dc8f;font-size:26px;line-height:1;cursor:pointer}
+html.lb-mo{overflow:hidden}
+
+/* menu chinh 7 muc: tren dien thoai xep 2 hang thay vi ep 1 hang */
+@media(max-width:700px){.dau nav{flex-wrap:wrap}.dau nav a{flex:1 1 calc(25% - 5px);min-height:44px}}
+.cap-nhat{max-width:1060px;margin:8px auto 0;padding:0 14px;text-align:center;font-size:13px;color:#cfc4b0}.muc-luc{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:1060px;margin:12px auto 0;padding:0 14px}.muc-luc a{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;font:600 14px var(--f-nd);text-decoration:none;color:var(--c-vang-hi);border:1px solid rgba(226,200,143,.35);border-radius:999px;background:rgba(6,9,22,.6)}.muc-luc a:hover{background:rgba(226,200,143,.18)}.muc{scroll-margin-top:80px}.con{margin:16px 0 6px;font:700 16px var(--f-tt);letter-spacing:.03em;text-align:center;color:#f3dfa6}.con.ok{color:#8fe0a6}.con.xau{color:#ff9d9d}.buoc{counter-reset:b;list-style:none;margin:6px 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}.buoc li{counter-increment:b;position:relative;padding:12px 12px 12px 46px;background:rgba(30,16,12,.55);border:1px solid rgba(226,160,90,.25);border-radius:6px}.buoc li::before{content:counter(b);position:absolute;left:12px;top:12px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:50%;font:700 14px var(--f-nd);color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46)}.muc .buoc li{display:block}.muc .buoc li>b{display:block;margin:0;font:700 15.5px/1.35 var(--f-nd);color:#f1e3c1}.muc .buoc li>span{display:block;margin:3px 0 0;font-size:13.5px;line-height:1.5;color:#d4c9b6}.ds{margin:6px 0 0;padding-left:20px;font-size:14.5px;line-height:1.6;color:#e6dcc6}.ds li{margin:4px 0}.ds b{color:#f6dc8f}.hai2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:6px 0}.o2{padding:4px 14px 10px;background:rgba(30,16,12,.55);border:1px solid rgba(226,160,90,.25);border-radius:6px}.o2.do{background:rgba(120,24,24,.22);border-color:rgba(208,80,80,.5)}.o2.xanh{background:rgba(30,90,50,.25);border-color:rgba(90,190,120,.5)}.canh{margin:10px 0;padding:10px 14px;border-radius:0 6px 6px 0;font-size:14.5px;line-height:1.6;color:#e6dcc6;background:rgba(226,200,143,.1);border-left:4px solid #c99a46}.canh b:first-child{display:block;margin-bottom:2px;color:#f6dc8f}.canh-do{background:rgba(160,40,40,.2);border-color:#d05050}.canh-do b:first-child{color:#ffb0b0}.canh-xanh{background:rgba(40,120,60,.2);border-color:#4cae6a}.canh-xanh b:first-child{color:#a6e8b8}.canh-lon{padding:14px 18px;font-size:15.5px;border-left-width:6px}.canh-lon b:first-child{font:700 18px/1.3 var(--f-tt)}.so-lon{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:8px 0 4px}.sl{display:flex;flex-direction:column;align-items:center;gap:2px;padding:14px 10px;text-align:center;border-radius:8px;border:1px solid rgba(242,212,138,.5);background:linear-gradient(160deg,rgba(110,70,20,.5),rgba(20,10,6,.85))}.sl b{font:700 clamp(24px,3vw,32px)/1.1 var(--f-tt);color:#fff3c9;font-variant-numeric:tabular-nums}.sl span{font:700 13px var(--f-nd);color:#e6c77d}.sl i{font-style:normal;font-size:12.5px;line-height:1.4;color:#cfc4b0}.so-lon.do .sl:first-child{border-color:rgba(240,110,100,.7);background:linear-gradient(160deg,rgba(150,30,24,.65),rgba(30,6,6,.9))}.luat-vang{margin:14px 0 10px;padding:16px 20px;text-align:center;border-radius:8px;border:1px solid rgba(242,212,138,.7);background:linear-gradient(rgba(120,74,20,.7),rgba(40,20,8,.85));box-shadow:0 0 22px rgba(243,201,106,.18)}.luat-vang span{display:block;font:700 12px var(--f-nd);letter-spacing:.12em;text-transform:uppercase;color:#e6c77d}.luat-vang b{display:block;margin:4px 0;font:700 clamp(19px,2.8vw,28px)/1.25 var(--f-tt);color:#fff3c9}.luat-vang p{margin:0;font-size:14.5px;color:#efe2c4}.bang-lop{overflow-x:auto;margin:6px 0}.bang-lop table{width:100%;border-collapse:collapse;font-size:14.5px}.bang-lop thead th{padding:8px 10px;text-align:left;font:700 12.5px var(--f-nd);letter-spacing:.04em;text-transform:uppercase;color:#e6c77d;border-bottom:1px solid rgba(226,200,143,.4)}.bang-lop td,.bang-lop tbody th{padding:8px 10px;text-align:left;color:#e6dcc6;border-bottom:1px dashed rgba(226,200,143,.18);vertical-align:middle;font-variant-numeric:tabular-nums}.bang-lop tbody th{font-size:14.5px;color:#f6dc8f;white-space:nowrap}.bang-lop td b{color:#fff3c9}.bang-lop tr.noi td,.bang-lop tr.noi th{background:rgba(120,74,20,.35);color:#fff3c9}.mon{display:inline-flex;align-items:center;gap:8px;margin:2px 10px 2px 0}.mon img{width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(0,0,0,.6))}.mon-nhom{display:flex;flex-wrap:wrap;align-items:center}.chu-nho{display:inline-block;margin:0 8px 0 0;font-size:12.5px;color:#cfc4b0}.mon .ko-anh{display:inline-block;width:8px;height:8px;margin:0 6px;border-radius:50%;background:#c99a46}.mon b{font-weight:600;color:#f1e3c1}.mon i{font-style:normal;color:#e6c77d;font-size:13px}.hinh{margin:12px auto 4px;max-width:720px}.hinh img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid rgba(226,200,143,.35)}.hinh figcaption{margin-top:6px;text-align:center;font-size:13px;line-height:1.5;color:#cfc4b0}.ba-anh{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.ba-anh .hinh{margin:8px 0 0}.chan-dung{list-style:none;margin:10px 0 4px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.chan-dung li{display:flex;flex-direction:column;align-items:center;width:150px;padding:8px 6px;text-align:center;border-radius:8px;background:radial-gradient(circle at 50% 40%,rgba(242,212,138,.18),rgba(6,9,22,.6) 70%);border:1px solid rgba(226,200,143,.3)}.chan-dung img{width:120px;height:120px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(0,0,0,.7))}.chan-dung b{margin-top:4px;font-size:14px;color:#f3dfa6}.chan-dung span{font-size:12px;line-height:1.4;color:#cfc4b0}details{margin:0 0 8px;padding:10px 14px;background:rgba(30,16,12,.55);border:1px solid rgba(226,160,90,.25);border-radius:6px}details summary{cursor:pointer;font:700 15px var(--f-nd);color:#f1e3c1}details[open] summary{margin-bottom:6px}details p{margin:0;font-size:14.5px;line-height:1.6;color:#d4c9b6}.chu-y{margin:10px 2px 0;font-size:13.5px;line-height:1.55;color:#cfc4b0}.xem{gap:10px;flex-wrap:wrap}@media(min-width:1300px){body>.nv{display:block;height:auto;width:min(520px,calc((100vw - 1060px)/2 + 120px));max-height:82vh;object-fit:contain;object-position:bottom}body>.nv-t{left:0}body>.nv-p{right:0}}body{background:#06050a url("../ss6-assets/anh/km-nen-trang.webp") center top/cover fixed no-repeat}.tieu{max-width:1060px;margin:10px auto 0;padding:30px 16px 22px;border-radius:8px;background:linear-gradient(rgba(6,5,10,.15),rgba(6,5,10,.55)),url("../ss6-assets/anh/km-nen-tieu.webp") center/cover no-repeat}.muc>.the{border:24px solid transparent;border-image:url("../ss6-assets/anh/km-khung.webp") 44 / 24px stretch;background:rgba(8,6,12,.82);background-clip:padding-box;padding:4px 6px 10px}@media(max-width:700px){.muc>.the{border-width:14px;border-image-width:14px}.hai2{grid-template-columns:minmax(0,1fr)}.bang-lop td,.bang-lop th{padding:6px 6px;font-size:13px}.bang-lop tbody th{white-space:normal}.mon img{width:30px;height:30px}.ba-anh{grid-template-columns:minmax(0,1fr)}.chan-dung li{width:calc(50% - 5px)}}.hai-cot{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}.hai-cot .buoc{grid-template-columns:minmax(0,1fr)}.hai-cot .hinh{margin:6px 0 0}@media(max-width:760px){.hai-cot{grid-template-columns:minmax(0,1fr)}.hai-cot .hinh{max-width:320px!important;margin:8px auto 0}}.phim tbody th{white-space:normal}.phim td b{display:inline-block;min-width:44px;padding:2px 10px;text-align:center;border-radius:6px;color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46)}</style>
+<link rel="canonical" href="https://mubattu.info/treo-may/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MU Bất Tử">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Treo Máy và Auto - MU Bất Tử">
+<meta property="og:description" content="Hướng dẫn treo máy MU Bất Tử SS6: bật Auto Helper bằng phím Z, cài tấn công, nhặt đồ, Tự động VIP mua theo giờ, bản đồ không cho auto, treo máy nhận quà online.">
+<meta property="og:url" content="https://mubattu.info/treo-may/">
+<meta property="og:image" content="https://mubattu.info/ss6-assets/anh/og-dang-ky-som.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mubattu.info/ss6-assets/anh/og-dang-ky-som.jpg">
+<style>.buoc{counter-reset:b;list-style:none;margin:6px 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}.buoc li{display:block;counter-increment:b;position:relative;padding:12px 12px 12px 46px;background:rgba(30,16,12,.55);border:1px solid rgba(226,160,90,.25);border-radius:6px}.buoc li::before{content:counter(b);position:absolute;left:12px;top:12px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:50%;font:700 14px var(--f-nd);color:#2a1a05;background:linear-gradient(#f2d48a,#c99a46)}.buoc b{display:block;margin-bottom:4px;color:#f6dc8f}.buoc span{font-size:13.5px;line-height:1.5;color:#e6dcc6}.hd-anh{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}.hd-anh figure{margin:0}.hd-anh img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid rgba(226,200,143,.4);box-shadow:0 6px 18px rgba(0,0,0,.55)}.hd-anh figcaption{margin-top:6px;font-size:12.5px;line-height:1.5;color:#cfc4b0}@media(max-width:700px){.hd-anh{grid-template-columns:minmax(0,1fr)}}.ds{margin:6px 0 0;padding-left:20px}.ds li{margin:3px 0;line-height:1.55}</style><style>.hd-anh{grid-template-columns:minmax(0,1fr)!important}.hd-anh figure{max-width:none!important;width:100%}</style></head>
+<body>
+<img class="nv nv-t" src="../ss6-assets/anh/mua-dk-07.webp" alt="" aria-hidden="true" fetchpriority="high" loading="lazy" decoding="async" style="aspect-ratio:auto 893/1100"><img class="nv nv-p" src="../ss6-assets/anh/mua-elf-07.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style="aspect-ratio:auto 934/1100">
+<header class="dau"><a class="logo" href="../index.html" aria-label="MU Bất Tử - trang chủ"><img src="../ss6-assets/anh/dk-bo-logo.webp" alt="MU BẤT TỬ NT Studio" width="447" height="115" loading="lazy" decoding="async"></a>
+<nav aria-label="Menu chính"><a href="../index.html">Trang chủ</a><a href="/#vao-choi">Tải game</a><a href="../cam-nang/index.html">Cẩm nang</a><a href="../tin-tuc/index.html">Tin tức</a><a href="/#su-kien">Đua Top</a><a href="../lich-su-kien/index.html">Lịch sự kiện</a><a href="../ho-tro/index.html">Hỗ trợ</a></nav></header>
+<main>
+<div class="tieu"><h1>Treo Máy và Auto</h1><p class="hl">Thiết lập auto một lần để treo máy luyện cấp, nhặt vật phẩm và nhận quà online</p><div class="dai" aria-hidden="true"></div></div>
+<p class="cap-nhat">Cập nhật 26/10/2026 · Áp dụng cho máy chủ MU Bất Tử SS6</p><nav class="muc-luc" aria-label="Mục lục"><a href="#video">Video hướng dẫn</a><a href="#bat-dau">Bật auto</a><a href="#danh">Tấn công</a><a href="#nhat">Nhặt đồ</a><a href="#vip">Tự động VIP</a><a href="#treo-o-dau">Khu vực treo máy</a><a href="#phim-tat">Phím tắt</a><a href="#hoi-dap">Hỏi đáp</a></nav><section class="muc" id="video" aria-label="Video hướng dẫn"><div class="the"><h2>Video hướng dẫn</h2><p class="phu">Cài Tự động tấn công từng bước</p><div style="position:relative;aspect-ratio:16/9;margin:14px 0 8px;border-radius:8px;overflow:hidden;background:#000"><iframe src="https://www.youtube.com/embed/q9XQoGxVY8o?rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;playsinline=1&amp;hl=vi" title="Hướng dẫn cài Tự động tấn công" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p style="margin:0;text-align:center;font-size:14px"><a href="https://youtu.be/q9XQoGxVY8o" target="_blank" rel="noopener">Xem trên YouTube ›</a> · Thêm video tại kênh <a href="https://www.youtube.com/@mubattu" target="_blank" rel="noopener">MU Bất Tử</a></p></div></section><section class="muc" id="bat-dau" aria-label="Bật auto"><div class="the"><h2>Bật auto</h2><p class="phu">Auto tích hợp sẵn trong game, được phép sử dụng</p><div class="luat-vang"><span>Lưu ý</span><b>Nhấn Lưu trước khi đóng bảng</b><p>Nếu đóng bảng khi chưa nhấn Lưu, toàn bộ thiết lập vừa cài sẽ bị mất.</p></div><ol class="buoc"><li><b>Mở bảng cài đặt</b><span>Nhấn phím Z, hoặc nhấn nút bánh răng ở góc trên bên trái: nút đầu tiên trong hàng 4 nút nhỏ dưới chân dung nhân vật.</span></li><li><b>Cài tab Tấn công và Nhặt đồ</b><span>Thiết lập theo hai mục bên dưới, sau đó nhấn Lưu ở cuối bảng.</span></li><li><b>Nhấn nút ▶ để chạy</b><span>Đóng bảng, nhấn nút ▶ ngay cạnh bánh răng để auto bắt đầu tấn công.</span></li></ol><figure class="hinh" style="max-width:570px"><img src="../ss6-assets/anh/pb-tm-nut-mo.webp" alt="Góc trên bên trái màn hình: mũi tên đỏ chỉ nút bánh răng dưới chân dung nhân vật, cạnh đó là nút chạy auto" width="570" height="375" loading="lazy"><figcaption>Nút bánh răng (mũi tên đỏ) mở bảng cài đặt auto. Nút ▶ ngay cạnh để chạy auto.</figcaption></figure><ul class="ds"><li>Auto mở cho mọi nhân vật từ cấp 1.</li><li>Auto tiêu hao Zen theo thời gian sử dụng.</li><li>Bản điện thoại giống bản PC: hàng 4 nút ở góc trên bên trái (bánh răng, ▶, kiếm chéo, bình máu).</li></ul><figure class="hinh" style="max-width:640px"><img src="../ss6-assets/anh/pb-tm-dien-thoai.webp" alt="Góc trên bên trái màn hình điện thoại: hàng 4 nút bánh răng, nút chạy, kiếm chéo, bình máu" width="640" height="240" loading="lazy"><figcaption>Bản điện thoại: bánh răng mở bảng cài đặt, nút ▶ ngay cạnh để chạy auto.</figcaption></figure><h3 class="con">Video hướng dẫn tân thủ 10 phút đầu</h3><div style="position:relative;aspect-ratio:16/9;margin:14px 0 8px;border-radius:8px;overflow:hidden;background:#000"><iframe src="https://www.youtube.com/embed/YvhcbZ6B2nE?rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;playsinline=1&amp;hl=vi" title="Hướng dẫn tân thủ 10 phút đầu" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div><p style="margin:0;text-align:center;font-size:14px"><a href="https://youtu.be/YvhcbZ6B2nE" target="_blank" rel="noopener">Xem trên YouTube ›</a> · Thêm video tại kênh <a href="https://www.youtube.com/@mubattu" target="_blank" rel="noopener">MU Bất Tử</a></p><div class="canh canh-do"><b>Auto trong game hợp lệ, công cụ ngoài bị cấm</b>Phần mềm bên ngoài điều khiển nhân vật, tăng tốc hoặc đọc, sửa bộ nhớ là hành vi gian lận và bị xử lý theo Luật chống gian lận.</div></div></section>
+<section class="muc" id="danh" aria-label="Tab Tấn công"><div class="the"><h2>Tab Tấn công</h2><p class="phu">Thiết lập cách tấn công, sau đó nhấn Lưu</p><div class="hai-cot"><div><ol class="buoc"><li><b>Phạm vi</b><span>Nhấn + hoặc − để đặt số ô quanh nhân vật trong phạm vi auto tìm quái.</span></li><li><b>Bình thuốc</b><span>Đánh dấu ô, sau đó nhấn Thiết lập để auto tự động sử dụng bình máu.</span></li><li><b>Tấn công từ xa, về vị trí đầu</b><span>Tuỳ chọn tấn công từ xa và tự động quay về vị trí ban đầu sau số giây đã thiết lập.</span></li><li><b>Skill 1, 2, 3 và Combo</b><span>Skill 1 là kỹ năng tấn công chính. Skill 2, 3 được dùng bổ sung theo độ trễ hoặc điều kiện. Đánh dấu Combo để nối chiêu.</span></li><li><b>Buff tiêu hao</b><span>Đánh dấu ô, sau đó đặt tối đa 3 kỹ năng buff để auto tự động sử dụng.</span></li><li><b>Nhấn Lưu</b><span>Nút Đặt lại đưa toàn bộ thiết lập về mặc định.</span></li></ol></div><figure class="hinh" style="max-width:401px"><img src="../ss6-assets/anh/pb-tm-tan-cong.webp" alt="Bảng Tự động, tab Tấn công: phạm vi, bình thuốc, tấn công từ xa, về vị trí đầu, Skill 1 đến 3, Combo, Buff tiêu hao, nút Đặt lại và Lưu" width="401" height="690" loading="lazy"><figcaption>Tab Tấn công.</figcaption></figure></div><div class="hd-anh"><figure><a href="../ss6-assets/anh/vip-hd-tu-hoi.webp" target="_blank" rel="noopener"><img src="../ss6-assets/anh/vip-hd-tu-hoi.webp" alt="Tự động hồi máu" width="1600" height="900" loading="lazy"></a><figcaption>Đánh dấu Bình thuốc, bấm Thiết lập để mở bảng Tự động hồi.</figcaption></figure></div></div></section>
+<section class="muc" id="nhat" aria-label="Tab Nhặt đồ"><div class="the"><h2>Tab Nhặt đồ</h2><p class="phu">Chọn loại vật phẩm muốn nhặt</p><div class="hai-cot"><div><ol class="buoc"><li><b>Phạm vi</b><span>Nhấn + hoặc − để đặt khoảng cách auto nhặt vật phẩm.</span></li><li><b>Tự động sửa đồ</b><span>Đánh dấu để auto tự sửa trang bị.</span></li><li><b>Nhặt tất cả hoặc nhặt có điều kiện</b><span>Với nhặt có điều kiện, chọn loại vật phẩm: Ngọc/Đá, Đồ thần, Zen, Vật phẩm Hoàn Hảo, Các loại box.</span></li><li><b>Thêm tên vật phẩm</b><span>Nhập tên vào ô trống rồi nhấn Thêm. Nhấn Xoá để bỏ tên đã thêm. Hoàn tất thì nhấn Lưu.</span></li></ol><div class="luat-vang"><span>Quan trọng</span><b>Nhập tên bằng tiếng Việt có dấu</b><p>Nhập "Ngọc", không nhập "Ngoc". Nếu nhập không dấu, auto sẽ không nhận diện được vật phẩm.</p></div></div><figure class="hinh" style="max-width:401px"><img src="../ss6-assets/anh/pb-tm-nhat-do.webp" alt="Bảng Tự động, tab Nhặt đồ: phạm vi, tự động sửa đồ, nhặt tất cả, nhặt có điều kiện, ô gõ tên, nút Thêm và Xoá" width="401" height="690" loading="lazy"><figcaption>Tab Nhặt đồ.</figcaption></figure></div></div></section>
+<section class="muc" id="vip" aria-label="Tab Tự động VIP"><div class="the"><h2>Tab Tự động VIP</h2><p class="phu">Tự Động Cày Cấp: tự động quay lại bãi luyện cấp đã chọn</p><div class="luat-vang"><span>Khác với gói VIP</span><b>Tự động VIP mua riêng theo giờ</b><p>Chỉ thành viên VIP mới mua được. Khi chưa mua, tab này bị khoá; hai tab Tấn công và Nhặt đồ vẫn sử dụng bình thường.</p></div><div class="bang-lop"><table class="vip-gia"><thead><tr><th>Gói</th><th>Giá (WCoin C hoặc WCoin P)</th></tr></thead><tbody><tr><th>8 giờ</th><td><b>12.000</b></td></tr><tr><th>24 giờ</th><td><b>24.000</b></td></tr><tr><th>72 giờ</th><td><b>60.000</b></td></tr></tbody></table></div><p class="chu-y">Khi mua thêm, thời gian được cộng dồn và tính riêng cho từng nhân vật. Mua trực tiếp trong tab bằng nút Mua 8h, Mua 24h, Mua 72h.</p><div class="hai-cot"><div><ol class="buoc"><li><b>Ghi nhớ bãi cày</b><span>Đánh dấu ô này, chọn bản đồ trong danh sách.</span></li><li><b>Nhấn Vị trí</b><span>Lấy đúng chỗ nhân vật đang đứng làm bãi. Dòng "Mục tiêu" hiển thị bản đồ và toạ độ đã lưu.</span></li><li><b>Tuỳ chọn</b><span>Tự động tấn công lại kẻ địch (PK), tự động xoá tội. Hoàn tất thì nhấn Lưu.</span></li></ol><p class="chu-y">Khi nhân vật chết hoặc sang bản đồ khác, auto tự đưa nhân vật quay lại bãi đã lưu. Muốn tắt, bỏ đánh dấu Ghi nhớ bãi cày rồi nhấn Lưu.</p><p class="chu-y">Khi đang sử dụng, dòng chữ xanh hiển thị thời gian còn lại. Khi hết hạn, phần cài đặt bị phủ tối và hiển thị "Auto đang khoá - mua để sử dụng".</p></div><figure class="hinh" style="max-width:401px"><img src="../ss6-assets/anh/pb-tm-vip.webp" alt="Bảng Tự động, tab Tự động VIP đang dùng: ghi nhớ bãi cày, danh sách bản đồ, nút Vị trí, đánh trả PK, xoá tội, thời gian còn lại và các nút mua 8, 24, 72 giờ" width="401" height="690" loading="lazy"><figcaption>Tab Tự động VIP khi đang dùng.</figcaption></figure></div><div class="hd-anh"><figure><a href="../ss6-assets/anh/tm-hd-ghi-nho-bai.webp" target="_blank" rel="noopener"><img src="../ss6-assets/anh/tm-hd-ghi-nho-bai.webp" alt="Ghi nhớ bãi cày tự đưa nhân vật về bãi" width="1600" height="900" loading="lazy"></a><figcaption>Đã lưu bãi Tarkan: nhân vật sang Kanturu, auto tự đưa về lại bãi Tarkan.</figcaption></figure><figure><a href="../ss6-assets/anh/vip-hd-auto-chua-vip.webp" target="_blank" rel="noopener"><img src="../ss6-assets/anh/vip-hd-auto-chua-vip.webp" alt="Tự động VIP khi chưa có VIP" width="1600" height="900" loading="lazy"></a><figcaption>Chưa có VIP: bấm Mua giờ Auto hiện "Bạn cần VIP để mua thời gian Auto."</figcaption></figure></div><div class="xem"><a href="../qua-online-vip/index.html">Giá và quyền lợi VIP ›</a></div></div></section>
+<section class="muc" id="treo-o-dau" aria-label="Khu vực treo máy"><div class="the"><h2>Khu vực treo máy</h2><p class="phu">Chọn đúng khu vực để vừa luyện cấp vừa nhận quà</p><div class="hai2"><div class="o2 xanh"><h3 class="con ok">Được bật auto</h3><ul class="ds"><li>Bãi luyện cấp tại các bản đồ thường.</li><li><b>Chiến Trường Cổ</b> (cần VIP): săn quái theo mốc túi; bản đồ cho phép PK.</li><li><b>Vulcanus</b>: tìm ba boss dã ngoại (đánh boss cần VIP); bản đồ cho phép PK.</li></ul></div><div class="o2 do"><h3 class="con xau">Không được bật auto</h3><ul class="ds"><li>Trong thành.</li><li>Hỗn Nguyên Lâu.</li><li>Đấu trường và các bản đồ sự kiện đấu.</li><li>Tại các bản đồ này, Chiến binh cần điều khiển thủ công.</li></ul></div></div><div class="hd-anh"><figure><a href="../ss6-assets/anh/vip-hd-auto-thanh.webp" target="_blank" rel="noopener"><img src="../ss6-assets/anh/vip-hd-auto-thanh.webp" alt="Bật auto trong thành" width="1600" height="900" loading="lazy"></a><figcaption>Trong thành: hiện "Không thể sử dụng Auto tại đây".</figcaption></figure><figure><a href="../ss6-assets/anh/tm-hd-hon-nguyen-lau.webp" target="_blank" rel="noopener"><img src="../ss6-assets/anh/tm-hd-hon-nguyen-lau.webp" alt="Bật auto trong Hỗn Nguyên Lâu" width="1600" height="900" loading="lazy"></a><figcaption>Hỗn Nguyên Lâu: cũng hiện "Không thể sử dụng Auto tại đây".</figcaption></figure></div><h3 class="con">Treo máy nhận quà online</h3><div class="so-lon "><div class="sl"><b>16 giờ</b><span>Online mỗi ngày</span><i>Nhận đủ 6 mốc</i></div><div class="sl"><b>9.900</b><span>WCoin P mỗi ngày</span><i>Kèm vật phẩm mỗi mốc</i></div><div class="sl"><b>VIP + guild</b><span>Điều kiện</span><i>Kèm reset đạt trần hôm trước</i></div></div><div class="xem"><a href="../qua-online-vip/index.html">Quà Online và VIP ›</a><a href="../chien-truong-co/index.html">Chiến Trường Cổ ›</a><a href="../boss-da-ngoai/index.html">Boss Dã Ngoại ›</a></div></div></section>
+<section class="muc" id="phim-tat" aria-label="Phím tắt bản PC"><div class="the"><h2>Phím tắt bản PC</h2><p class="phu">Bản điện thoại và Web dùng nút trên màn hình</p><div class="bang-lop"><table class="phim"><thead><tr><th>Chức năng</th><th>Phím</th></tr></thead><tbody><tr><th>Mở bảng cài đặt Auto</th><td><b>Z</b></td></tr><tr><th>Thùng đồ nhân vật</th><td><b>V · I</b></td></tr><tr><th>Chỉ số nhân vật</th><td><b>C</b></td></tr><tr><th>Bản đồ</th><td><b>TAB</b></td></tr><tr><th>Danh sách dịch chuyển</th><td><b>M</b></td></tr><tr><th>Cash Shop</th><td><b>X</b></td></tr><tr><th>Camera 3D</th><td><b>F10</b></td></tr><tr><th>Danh sách lệnh</th><td><b>D</b></td></tr><tr><th>Tổ đội</th><td><b>P</b></td></tr><tr><th>Hội</th><td><b>G</b></td></tr><tr><th>Cài đặt</th><td><b>O</b></td></tr></tbody></table></div></div></section>
+<section class="muc" id="hoi-dap" aria-label="Hỏi đáp"><div class="the"><h2>Hỏi đáp</h2><p class="phu">Câu hỏi thường gặp</p><details><summary>Dùng Auto có bị khoá tài khoản không?</summary><p>Không. Auto tích hợp sẵn trong game (phím Z) là hợp lệ. Chỉ phần mềm bên ngoài điều khiển nhân vật mới bị xem là vi phạm.</p></details><details><summary>Thoát game có phải cài đặt lại auto không?</summary><p>Không, nếu đã nhấn Lưu trước khi đóng bảng. Nếu chưa nhấn Lưu, thiết lập vừa cài sẽ bị mất.</p></details><details><summary>Auto không nhặt vật phẩm dù đã thêm tên?</summary><p>Kiểm tra lại tên đã nhập có đủ dấu tiếng Việt và đã nhấn Lưu hay chưa. Nếu nhập không dấu, auto sẽ không nhận diện được vật phẩm.</p></details><details><summary>Vì sao một số bản đồ không sử dụng được auto?</summary><p>Một số bản đồ không cho phép sử dụng auto: Hỗn Nguyên Lâu, đấu trường và các bản đồ sự kiện đấu. Tại các bản đồ này, Chiến binh cần điều khiển thủ công; khi trở lại bản đồ thường, auto hoạt động bình thường.</p></details><div class="xem"><a href="../tan-thu/index.html">Hướng dẫn tân thủ ›</a><a href="../luat-chong-gian-lan/index.html">Luật chống gian lận ›</a></div></div></section>
+<nav class="tai" aria-label="Tải game theo thiết bị"><a class="bo-nut" href="../play/index.html"><img src="../ss6-assets/anh/dk-bo-nut2-web.webp" alt="Chơi trên web" loading="lazy" decoding="async" style="aspect-ratio:auto 212/60"></a><a class="bo-nut" href="../tai-ve-pc/index.html"><img src="../ss6-assets/anh/dk-bo-nut2-pc.webp" alt="PC Download" loading="lazy" decoding="async" style="aspect-ratio:auto 212/60"></a><a class="bo-nut" href="../play/index.html"><img src="../ss6-assets/anh/dk-bo-nut2-iphone-web.webp" alt="iPhone: chơi trên Safari" loading="lazy" decoding="async" style="aspect-ratio:auto 212/60"></a><a class="bo-nut" href="../tai-google-play/index.html"><img src="../ss6-assets/anh/dk-bo-nut2-apk.webp" alt="Android: tải tệp APK" loading="lazy" decoding="async" style="aspect-ratio:auto 212/60"></a></nav>
+</main>
+<footer class="chan"><div class="dai" aria-hidden="true"></div><p class="bo-chan"><img class="l" src="../ss6-assets/anh/dk-bo-logo.webp" alt="MU BẤT TỬ NT Studio" loading="lazy" decoding="async" style="aspect-ratio:auto 447/115"><img class="i" src="../ss6-assets/anh/dk-bo-app-icon.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style="aspect-ratio:auto 93/93"><img class="i" src="../ss6-assets/anh/dk-bo-18.webp" alt="18+" loading="lazy" decoding="async" style="aspect-ratio:auto 94/93"></p>
+<a href="../chinh-sach-quyen-rieng-tu/index.html">Chính sách quyền riêng tư</a> · <a href="../dieu-khoan-dich-vu/index.html">Điều khoản dịch vụ</a><br>Hỗ trợ: <a href="https://discord.gg/pd5W8NQh4G" target="_blank" rel="noopener">Discord</a> · <a href="https://www.facebook.com/mubattu.ntstudio" target="_blank" rel="noopener">Fanpage</a><br>Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe.<br>© 2022 MU Bất Tử / NT Studio.</footer>
+<script>(function(){var im=[].slice.call(document.querySelectorAll('main figure img,main img.menu-nho'));if(!im.length)return;
+var o=document.createElement('div');o.className='lb';o.hidden=true;o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.setAttribute('aria-label','Xem ảnh phóng to');
+o.innerHTML='<button type="button" class="lb-x" aria-label="Đóng">\u00d7</button><img alt="" loading="lazy" decoding="async">';document.body.appendChild(o);
+var big=o.querySelector('img'),x=o.querySelector('button'),last=null;
+big.onload=function(){var s=Math.min(2.5,innerWidth*.96/big.naturalWidth,innerHeight*.92/big.naturalHeight);big.style.width=s>1?Math.round(big.naturalWidth*s)+'px':'';};
+function mo(i){last=i;big.style.width='';big.alt=i.alt;big.src=i.currentSrc||i.src;o.hidden=false;document.documentElement.classList.add('lb-mo');x.focus();}
+function dong(){o.hidden=true;document.documentElement.classList.remove('lb-mo');big.removeAttribute('src');if(last)last.focus();}
+im.forEach(function(i){i.classList.add('lb-img');i.tabIndex=0;i.setAttribute('role','button');i.title='Bấm để phóng to';i.addEventListener('click',function(e){e.preventDefault();mo(i);});i.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();mo(i);}});});
+o.addEventListener('click',dong);document.addEventListener('keydown',function(e){if(!o.hidden&&e.key==='Escape')dong();});})();</script>
+<script>(function(){var p=location.pathname,cn=/^\/(cam-nang|tan-thu|reset|chuoc-point-reset|he-thong-vat-pham|lo-trinh-do|tien-cap|cong-huong|doi-do|ep-do|dong-380|socket|gia-cuong|canh|thu-cuoi|doppelganger|qua-nap-lan-dau|qua-online-vip|qua-tan-thu|luat-chong-gian-lan|ma-moi|quang-truong-quy|lau-dai-mau|chien-truong-co|boss-da-ngoai|boss-xam-luoc|treo-may|thu-cung|cong-thanh-chien|huyet-chien-tu-dia|huong-dan-dien-thoai|he-thong-nhan-vat|tai-khoan)\//;
+var a=[].slice.call(document.querySelectorAll('header.dau nav a')),t=null;a.forEach(function(x){var h=(x.getAttribute('href')||'').split('#')[0];if(h&&h!=='/'&&h===p)t=x;});
+if(!t&&cn.test(p))t=a.filter(function(x){return x.getAttribute('href')==='/cam-nang/';})[0];if(t)t.setAttribute('aria-current','page');})();</script>
+<script>(function () {
+  if (document.getElementById('tn-nhanh')) return;
+  var cucBo = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  var goc = cucBo ? '/dang-ky-som-v6/' : '/';
+  var anh = cucBo ? '/dang-ky-som-v6/anh/menu-o-chon.png' : '../ss6-assets/tc/menu-o-chon.webp';
+  var ds = [['tai-ve-pc', 'Tải và cài game'], ['tai-khoan', 'Tài khoản và bảo mật'], ['tan-thu', 'Hướng dẫn tân thủ'], ['qua-tan-thu', 'Quà Tân Thủ'], ['ho-tro', 'Hỗ trợ']];
+  var css = '#tn-nhanh{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;display:flex;align-items:center;font:600 13.5px/1.25 "Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif;transition:transform .28s cubic-bezier(.2,.8,.2,1)}' +
+    '#tn-nhanh .tn-ds{display:flex;flex-direction:column;gap:6px;margin:0;padding:10px 8px 10px 4px;list-style:none;background:rgba(8,4,3,.86);border:1px solid rgba(226,200,143,.35);border-right:0;border-radius:8px 0 0 8px;box-shadow:0 6px 22px rgba(0,0,0,.55)}' +
+    '#tn-nhanh .tn-ds a{display:flex;align-items:center;justify-content:center;min-height:44px;width:196px;padding:0 22px;text-align:center;text-decoration:none;color:#efdcb2;text-shadow:0 1px 2px #000;background:linear-gradient(rgba(10,5,4,.72),rgba(10,5,4,.72)),url("' + anh + '") center/100% 100% no-repeat}' +
+    '#tn-nhanh .tn-ds a:hover,#tn-nhanh .tn-ds a:focus-visible{background:linear-gradient(rgba(10,5,4,.3),rgba(10,5,4,.3)),url("' + anh + '") center/100% 100% no-repeat;color:#fff}' +
+    '#tn-nhanh .tn-ds a:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}' +
+    '#tn-nhanh .tn-ds a[aria-current]{color:#fff;background:linear-gradient(rgba(120,70,20,.35),rgba(120,70,20,.35)),url("' + anh + '") center/100% 100% no-repeat}' +
+    '#tn-nhanh .tn-nut{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:34px;min-height:112px;padding:8px 0;margin:0;border:1px solid rgba(226,200,143,.45);border-right:0;border-radius:8px 0 0 8px;background:rgba(40,22,10,.92);color:#efdcb2;font:700 12px/1.1 "Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif;letter-spacing:.06em;cursor:pointer;writing-mode:vertical-rl;text-orientation:mixed;box-shadow:0 4px 14px rgba(0,0,0,.5)}' +
+    '#tn-nhanh .tn-nut:hover{background:rgba(70,40,15,.95);color:#fff}#tn-nhanh .tn-nut:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}' +
+    '#tn-nhanh .tn-nut span{display:inline-block;writing-mode:horizontal-tb;margin-bottom:6px;font-size:17px;line-height:1;transition:transform .28s}' +
+    '#tn-nhanh.an{transform:translate(calc(100% - 34px),-50%)}#tn-nhanh.an .tn-nut span{transform:rotate(180deg)}' +
+    '#tn-nhanh.an .tn-ds{visibility:hidden;transition:visibility 0s .28s}' +
+    '@media(max-width:700px){#tn-nhanh{font-size:12.5px}#tn-nhanh .tn-ds a{width:164px;min-height:42px;padding:0 16px}#tn-nhanh .tn-nut{width:30px;min-height:96px;font-size:11px}#tn-nhanh.an{transform:translate(calc(100% - 30px),-50%)}}' +
+    '@media(prefers-reduced-motion:reduce){#tn-nhanh,#tn-nhanh .tn-nut span{transition:none}}' +
+    '@media print{#tn-nhanh{display:none}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+  var duong = location.pathname.replace(/index\.html$/, '');
+  var li = ds.map(function (d) {
+    var u = goc + d[0] + (cucBo ? '.html' : '/');
+    var cur = duong === u || duong === goc + d[0] + '/' ? ' aria-current="page"' : '';
+    return '<li><a href="' + u + '"' + cur + '>' + d[1] + '</a></li>';
+  }).join('');
+  var nav = document.createElement('nav');
+  nav.id = 'tn-nhanh'; nav.setAttribute('aria-label', 'Truy cập nhanh');
+  nav.innerHTML = '<button type="button" class="tn-nut" aria-controls="tn-ds" aria-expanded="true"><span aria-hidden="true">›</span>Truy cập nhanh</button><ul class="tn-ds" id="tn-ds">' + li + '</ul>';
+  var nut = nav.querySelector('.tn-nut');
+  function dat(an) {
+    nav.classList.toggle('an', an);
+    nut.setAttribute('aria-expanded', an ? 'false' : 'true');
+    nut.setAttribute('aria-label', an ? 'Hiện thanh truy cập nhanh' : 'Ẩn thanh truy cập nhanh');
+  }
+  var luu = null;
+  try { luu = localStorage.getItem('tn-nhanh'); } catch (e) {}
+  // dien thoai: mac dinh thu gon de khong che noi dung; may tinh: mac dinh mo. Nho lua chon cua nguoi xem.
+  dat(luu ? luu === 'an' : window.matchMedia('(max-width:1366px)').matches);
+  nut.addEventListener('click', function () {
+    var an = !nav.classList.contains('an'); dat(an);
+    try { localStorage.setItem('tn-nhanh', an ? 'an' : 'hien'); } catch (e) {}
+  });
+  document.body.appendChild(nav);
+})();
+</script><script>(function () {
+  if (document.getElementById('tl-mo')) return;
+  var cucBo = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  var API = cucBo ? 'http://127.0.0.1:8770/api-v2/tro-ly.php' : '/api/tro-ly.php';
+  var ANH = cucBo ? '/dang-ky-som-v6/anh/' : '../ss6-assets/' + 'anh/';   // tach chuoi: bo dong goi/toi uu khong dung vao
+  var TEN = 'Trợ lý Tiên Nữ';
+  var CHAO = 'Bạn cần mình giúp gì không? Mình là ' + TEN + ', trợ lý AI của MU Bất Tử SS6. Bạn cứ hỏi mình về cách tải game, lịch mở máy chủ, quà tân thủ hay sự kiện nhé.';   // Long 27/10
+  var GOI_Y = ['Tải game ở đâu?', 'Khi nào mở máy chủ?', 'Quà tân thủ có gì?', 'Nhập giftcode thế nào?'];
+  // Long 27/10: nut dat cao hon mep duoi (~110px), sat mep phai, to 80px
+  var css = '#tl-mo{position:fixed;right:24px;bottom:110px;z-index:45;display:flex;align-items:center;gap:8px;padding:0;border:0;background:none;cursor:pointer;font:600 14px/1.2 "Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif}' +
+    '#tl-mo img{width:80px;height:80px;border-radius:50%;border:2px solid #e2c88f;box-shadow:0 0 0 3px rgba(8,4,3,.85),0 6px 18px rgba(0,0,0,.6);object-fit:cover;background:#2a1710}' +
+    '#tl-mo span{order:-1;padding:9px 14px;border:1px solid rgba(226,200,143,.55);border-radius:20px;background:rgba(8,4,3,.9);color:#efdcb2;text-shadow:0 1px 2px #000;box-shadow:0 4px 12px rgba(0,0,0,.5)}' +
+    '#tl-mo:hover img{border-color:#fff1cf}#tl-mo:focus-visible{outline:2px solid #f3c96a;outline-offset:4px;border-radius:40px}' +
+    '#tl-kh{position:fixed;right:16px;bottom:16px;z-index:46;display:flex;flex-direction:column;width:min(400px,calc(100vw - 32px));height:min(600px,calc(100vh - 32px));border:1px solid rgba(226,200,143,.55);border-radius:10px;background:#0c0705;box-shadow:0 12px 40px rgba(0,0,0,.7);overflow:hidden;font:400 14.5px/1.55 "Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif;color:#e8dcc6}' +
+    '#tl-kh[hidden]{display:none!important}' +
+    '#tl-kh .tl-dau{position:relative;flex:0 0 auto;display:flex;align-items:flex-end;min-height:104px;padding:12px 48px 12px 14px;background:linear-gradient(90deg,rgba(12,7,5,.96) 45%,rgba(12,7,5,.2)),url("' + ANH + 'tro-ly-elf.webp") right -10px top -8px/auto 150% no-repeat,#2a1710;border-bottom:1px solid rgba(226,200,143,.35)}' +
+    '#tl-kh .tl-dau b{display:block;font:700 18px/1.25 "Noto Serif","NS du phong",Georgia,serif;color:#f3d38a;text-shadow:0 1px 3px #000}#tl-kh .tl-dau small{display:block;margin-top:3px;font-size:12.5px;color:#cbbd9f}' +
+    '#tl-kh .tl-dong{position:absolute;top:8px;right:8px;width:40px;height:40px;border:1px solid rgba(226,200,143,.4);border-radius:50%;background:rgba(8,4,3,.75);color:#efdcb2;font:400 22px/1 system-ui,sans-serif;cursor:pointer}' +
+    '#tl-kh .tl-dong:hover{background:rgba(70,40,15,.95);color:#fff}#tl-kh .tl-dong:focus-visible,#tl-kh button:focus-visible,#tl-kh textarea:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}' +
+    '#tl-kh .tl-ds{flex:1 1 auto;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:10px;overscroll-behavior:contain}' +
+    '#tl-kh .tl-tin{max-width:88%;padding:9px 12px;border-radius:10px;overflow-wrap:anywhere;white-space:normal}' +
+    '#tl-kh .tl-tin.a{align-self:flex-start;display:flex;gap:8px;max-width:94%;padding:0;background:none}#tl-kh .tl-tin.a img{flex:0 0 30px;width:30px;height:30px;border-radius:50%;border:1px solid #e2c88f;object-fit:cover}' +
+    '#tl-kh .tl-tin.a div{padding:9px 12px;border-radius:2px 10px 10px 10px;background:rgba(226,200,143,.09);border:1px solid rgba(226,200,143,.22)}' +
+    '#tl-kh .tl-tin.u{align-self:flex-end;border-radius:10px 2px 10px 10px;background:linear-gradient(#5a2f12,#42210c);border:1px solid rgba(226,200,143,.4);color:#fff3dc}' +
+    '#tl-kh .tl-tin a{color:#ffd77a;text-decoration:underline;text-underline-offset:2px}#tl-kh .tl-tin b{color:#fff1cf}#tl-kh .tl-tin ul{margin:4px 0;padding-left:18px}' +
+    '#tl-kh .tl-cho div{color:#cbbd9f;font-style:italic}' +
+    '#tl-kh .tl-gy{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px}#tl-kh .tl-gy button{min-height:36px;padding:6px 11px;border:1px solid rgba(226,200,143,.45);border-radius:18px;background:rgba(8,4,3,.6);color:#efdcb2;font:500 13px/1.2 inherit;font-family:inherit;cursor:pointer}' +
+    '#tl-kh .tl-gy button:hover{background:rgba(226,200,143,.16)}' +
+    '#tl-kh .tl-nhap{flex:0 0 auto;display:flex;gap:8px;align-items:flex-end;padding:10px 12px;border-top:1px solid rgba(226,200,143,.25);background:#140b07}' +
+    '#tl-kh textarea{flex:1 1 auto;min-height:44px;max-height:120px;resize:none;padding:10px 12px;border:1px solid rgba(226,200,143,.4);border-radius:8px;background:#0c0705;color:#fff3dc;font:400 15px/1.4 inherit;font-family:inherit}' +
+    '#tl-kh textarea::placeholder{color:#8f846f}' +
+    '#tl-kh .tl-gui{flex:0 0 auto;min-width:64px;min-height:44px;padding:0 14px;border:1px solid #c79a45;border-radius:8px;background:linear-gradient(#c79a45,#8a6224);color:#1b1006;font:700 14px/1 inherit;font-family:inherit;cursor:pointer}' +
+    '#tl-kh .tl-gui:disabled{opacity:.55;cursor:default}' +
+    '#tl-kh .tl-chu{flex:0 0 auto;margin:0;padding:6px 12px 10px;background:#140b07;font-size:11.5px;line-height:1.4;color:#9d917b}#tl-kh .tl-chu a{color:#d9bf86}' +
+    '#tl-chao{position:fixed;right:24px;bottom:202px;z-index:45;display:flex;align-items:flex-start;gap:6px;max-width:min(300px,calc(100vw - 32px));padding:11px 8px 11px 14px;border:1px solid rgba(226,200,143,.6);border-radius:12px 12px 2px 12px;background:rgba(12,7,5,.96);box-shadow:0 8px 24px rgba(0,0,0,.6);color:#efdcb2;font:400 14px/1.5 "Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif;cursor:pointer;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}' +
+    '#tl-chao.hien{opacity:1;transform:none}#tl-chao[hidden]{display:none}#tl-chao b{color:#f3d38a}' +
+    '#tl-chao button{flex:0 0 auto;width:32px;height:32px;margin:-6px -2px 0 0;border:0;border-radius:50%;background:none;color:#cbbd9f;font:400 20px/1 system-ui,sans-serif;cursor:pointer}#tl-chao button:hover{color:#fff;background:rgba(226,200,143,.15)}' +
+    '#tl-chao:focus-visible,#tl-chao button:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}' +
+    '@media(max-width:1366px){#tl-mo{bottom:96px}#tl-mo img{width:64px;height:64px}#tl-mo span{display:none}}' +
+    '@media(prefers-reduced-motion:reduce){#tl-chao{transition:none}}' +
+    '@media(max-width:700px){#tl-mo{right:8px;bottom:76px}#tl-chao{right:12px;bottom:136px;font-size:13.5px}#tl-mo img{width:48px;height:48px}#tl-mo span{display:none}' +
+    '#tl-kh{right:0;bottom:0;width:100vw;height:88vh;height:88dvh;border-radius:14px 14px 0 0;border-bottom:0}}' +
+    '@media print{#tl-mo,#tl-kh{display:none}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+
+  function esc(s) { return s.replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  var DUOC = /^https:\/\/((www\.)?mubattu\.info|discord\.gg|zalo\.me|(www\.)?facebook\.com)\//;
+  function dinhDang(t) {
+    var dong = esc(t).split('\n'), ra = '', ul = false;
+    dong.forEach(function (d) {
+      d = d.replace(/https:\/\/[^\s<]+/g, function (u) {
+        var duoi = (u.match(/[.,;:!?)]+$/) || [''])[0]; u = u.slice(0, u.length - duoi.length);
+        return (DUOC.test(u) ? '<a href="' + u + '" target="' + (/mubattu\.info/.test(u) ? '_self' : '_blank') + '" rel="noopener">' + u.replace(/^https:\/\//, '') + '</a>' : u) + duoi;
+      }).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+      var m = d.match(/^\s*[-•*]\s+(.*)$/);
+      if (m) { if (!ul) { ra += '<ul>'; ul = true; } ra += '<li>' + m[1] + '</li>'; return; }
+      if (ul) { ra += '</ul>'; ul = false; }
+      if (d.trim()) ra += '<p style="margin:0 0 6px">' + d + '</p>';
+    });
+    return ra + (ul ? '</ul>' : '');
+  }
+
+  var mo = document.createElement('button');
+  mo.id = 'tl-mo'; mo.type = 'button'; mo.setAttribute('aria-label', 'Mở ' + TEN + ' để hỏi đáp'); mo.setAttribute('aria-expanded', 'false'); mo.setAttribute('aria-controls', 'tl-kh');
+  mo.innerHTML = '<span>Hỏi trợ lý</span><img src="' + ANH + 'tro-ly-elf-tron.webp" alt="" width="64" height="64">';
+  var kh = document.createElement('section');
+  kh.id = 'tl-kh'; kh.hidden = true; kh.setAttribute('role', 'dialog'); kh.setAttribute('aria-label', TEN);
+  kh.innerHTML = '<div class="tl-dau"><div><b>' + TEN + '</b><small>Trợ lý AI · Trả lời về MU Bất Tử SS6</small></div>' +
+    '<button type="button" class="tl-dong" aria-label="Đóng trợ lý">×</button></div>' +
+    '<div class="tl-ds" aria-live="polite"></div><div class="tl-gy"></div>' +
+    '<form class="tl-nhap"><textarea rows="1" maxlength="400" placeholder="Nhập câu hỏi…" aria-label="Câu hỏi cho trợ lý"></textarea><button type="submit" class="tl-gui">Gửi</button></form>' +
+    '<p class="tl-chu">Trợ lý AI có thể trả lời chưa chính xác. Không nhập mật khẩu hay mã bí mật. Việc tài khoản, nạp: vào <a href="https://discord.gg/pd5W8NQh4G" target="_blank" rel="noopener">Discord hỗ trợ riêng</a>.</p>';
+  document.body.appendChild(mo); document.body.appendChild(kh);
+  var ds = kh.querySelector('.tl-ds'), gy = kh.querySelector('.tl-gy'), form = kh.querySelector('form'), o = kh.querySelector('textarea'), gui = kh.querySelector('.tl-gui');
+
+  var ls = [];
+  try { ls = JSON.parse(sessionStorage.getItem('tl-ls') || '[]'); if (!Array.isArray(ls)) ls = []; } catch (e) { ls = []; }
+  function luu() { try { sessionStorage.setItem('tl-ls', JSON.stringify(ls.slice(-20))); } catch (e) {} }
+  function them(r, t, cho) {
+    var el = document.createElement('div'); el.className = 'tl-tin ' + r + (cho ? ' tl-cho' : '');
+    if (r === 'a') el.innerHTML = '<img src="' + ANH + 'tro-ly-elf-tron.webp" alt="" width="30" height="30"><div>' + (cho ? esc(t) : dinhDang(t)) + '</div>';
+    else el.textContent = t;
+    ds.appendChild(el); ds.scrollTop = ds.scrollHeight; return el;
+  }
+  function veGoiY() {
+    gy.innerHTML = ''; if (ls.length) return;
+    GOI_Y.forEach(function (g) { var b = document.createElement('button'); b.type = 'button'; b.textContent = g; b.onclick = function () { hoi(g); }; gy.appendChild(b); });
+  }
+  function ve() { ds.innerHTML = ''; them('a', CHAO); ls.forEach(function (m) { them(m.r, m.t); }); veGoiY(); }
+  var dangHoi = false;
+  function hoi(cau) {
+    cau = (cau || '').trim(); if (!cau || dangHoi) return;
+    dangHoi = true; gui.disabled = true; o.value = ''; gy.innerHTML = '';
+    var truoc = ls.slice(-6); ls.push({ r: 'u', t: cau }); luu(); them('u', cau);
+    var cho = them('a', 'Đang trả lời…', true);
+    fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ hoi: cau, ls: truoc }) })
+      .then(function (r) { return r.json().catch(function () { return {}; }); })
+      .then(function (d) {
+        var t = (d && d.tra_loi) || 'Trợ lý đang bận, bạn vui lòng thử lại sau ít phút.';
+        cho.remove(); them('a', t); if (d && d.ok) { ls.push({ r: 'a', t: t }); luu(); }
+      })
+      .catch(function () { cho.remove(); them('a', 'Không kết nối được tới trợ lý. Bạn vui lòng kiểm tra mạng rồi thử lại.'); })
+      .then(function () { dangHoi = false; gui.disabled = false; o.focus(); });
+  }
+  form.addEventListener('submit', function (e) { e.preventDefault(); hoi(o.value); });
+  o.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); hoi(o.value); } });
+  o.addEventListener('input', function () { o.style.height = 'auto'; o.style.height = Math.min(o.scrollHeight, 120) + 'px'; });
+  function dat(m) {
+    kh.hidden = !m; mo.hidden = m; mo.setAttribute('aria-expanded', m ? 'true' : 'false');
+    if (m) { if (!ds.childNodes.length) ve(); setTimeout(function () { o.focus(); }, 30); } else mo.focus();
+  }
+  mo.addEventListener('click', function () { dat(true); });
+  // Long 27/10: chu dong chao khi mo website - bong bong canh nut, moi phien mot lan; bam vao mo khung chat, bam x thi tat
+  var daChao = false;
+  try { daChao = sessionStorage.getItem('tl-chao') === '1' || ls.length > 0; } catch (e) {}
+  if (!daChao) setTimeout(function () {
+    if (!kh.hidden) return;
+    var b = document.createElement('div');
+    b.id = 'tl-chao'; b.setAttribute('role', 'button'); b.tabIndex = 0; b.setAttribute('aria-label', 'Mở ' + TEN);
+    b.innerHTML = '<div><b>Bạn cần mình giúp gì không?</b></div><button type="button" aria-label="Tắt lời chào">×</button>';   // Long 27/10
+    document.body.appendChild(b);
+    requestAnimationFrame(function () { b.classList.add('hien'); });
+    function tat() { b.remove(); try { sessionStorage.setItem('tl-chao', '1'); } catch (e) {} }
+    b.querySelector('button').addEventListener('click', function (e) { e.stopPropagation(); tat(); });
+    b.addEventListener('click', function () { tat(); dat(true); });
+    b.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tat(); dat(true); } });
+    mo.addEventListener('click', tat, { once: true });
+  }, 3000);
+  kh.querySelector('.tl-dong').addEventListener('click', function () { dat(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !kh.hidden) dat(false); });
+})();
+</script><script>(function () {
+  if (document.getElementById('tt-tiep')) return;
+  var N = [["Bắt đầu chơi", "tan-thu", [["tai-ve-pc", "Tải và cài game"], ["tai-khoan", "Tài khoản và bảo mật"], ["tan-thu", "Hướng dẫn tân thủ"], ["huong-dan-dien-thoai", "Chơi trên điện thoại"], ["qua-tan-thu", "Quà Tân Thủ"], ["ma-moi", "Mã Mời"]]], ["Nhân vật và lên cấp", "nhan-vat", [["he-thong-nhan-vat", "Hệ Thống Nhân Vật"], ["treo-may", "Treo Máy và Auto"], ["reset", "Reset"], ["chuoc-point-reset", "Chuộc Point Reset"]]], ["Trang bị và nâng cấp", "trang-bi", [["lo-trinh-do", "Lộ Trình Đồ"], ["he-thong-vat-pham", "Hệ thống vật phẩm"], ["ep-do", "Ép Đồ"], ["dong-380", "Dòng 380"], ["socket", "Socket"], ["gia-cuong", "Gia Cường"], ["tien-cap", "Tiến Cấp"], ["cong-huong", "Cộng Hưởng"], ["doi-do", "Đổi Đồ"], ["canh", "Cánh"], ["thu-cuoi", "Thú Cưỡi"], ["thu-cung", "Thú Cưng"]]], ["Sự kiện hằng ngày", "san-boss", [["lich-su-kien", "Lịch sự kiện hằng ngày"], ["doppelganger", "Doppelganger"], ["quang-truong-quy", "Quảng Trường Quỷ"], ["lau-dai-mau", "Lâu Đài Máu"], ["hon-nguyen-lau", "Hỗn Nguyên Lâu"], ["chien-truong-co", "Chiến Trường Cổ"], ["boss-xam-luoc", "Boss Xâm Lược"], ["boss-da-ngoai", "Boss Dã Ngoại"], ["huyet-chien-tu-dia", "Huyết Chiến Tử Địa"], ["cong-thanh-chien", "Công Thành Chiến"]]], ["VIP, nạp và ưu đãi", "nap-vip", [["vip", "VIP"], ["qua-online-vip", "Quà Online"], ["uu-dai-mo-may-chu", "Ưu đãi mở máy chủ"], ["huong-dan-nap", "Hướng dẫn nạp"], ["qua-nap-lan-dau", "Quà Nạp Lần Đầu"]]], ["Cần giúp đỡ", "giup-do", [["ho-tro", "Hỗ trợ"], ["luat-chong-gian-lan", "Luật chống gian lận"]]]], CUNG = {"tai-google-play": "tai-ve-pc", "tai-app-store": "tai-ve-pc", "play": "tai-ve-pc"}, HTML = {"play": "tai-web.html", "tai-ve-pc": "tai-pc.html", "tai-app-store": "tai-ios.html", "tai-google-play": "tai-android.html", "thong-tin-may-chu": "thong-tin-may-chu.html", "lo-trinh-may-chu": "lo-trinh-may-chu.html", "chinh-sach-streamer": "chinh-sach-streamer.html", "cam-nang": "cam-nang.html", "tin-tuc": "tin-tuc.html", "chinh-sach-quyen-rieng-tu": "chinh-sach-quyen-rieng-tu.html", "dieu-khoan-dich-vu": "dieu-khoan.html", "tan-thu": "tan-thu.html", "lich-su-kien": "lich-su-kien.html", "qua-nap-lan-dau": "qua-nap-lan-dau.html", "reset": "reset.html", "lo-trinh-do": "lo-trinh-do.html", "ep-do": "ep-do.html", "tien-cap": "tien-cap.html", "canh": "canh.html", "socket": "socket.html", "gia-cuong": "gia-cuong.html", "dong-380": "dong-380.html", "cong-huong": "cong-huong.html", "doi-do": "doi-do.html", "thu-cuoi": "thu-cuoi.html", "doppelganger": "doppelganger.html", "qua-online-vip": "qua-online-vip.html", "ma-moi": "ma-moi.html", "qua-tan-thu": "qua-tan-thu.html", "luat-chong-gian-lan": "luat-chong-gian-lan.html", "quang-truong-quy": "quang-truong-quy.html", "lau-dai-mau": "lau-dai-mau.html", "hon-nguyen-lau": "hon-nguyen-lau.html", "chien-truong-co": "chien-truong-co.html", "boss-da-ngoai": "boss-da-ngoai.html", "boss-xam-luoc": "boss-xam-luoc.html", "treo-may": "treo-may.html", "thu-cung": "thu-cung.html", "cong-thanh-chien": "cong-thanh-chien.html", "huyet-chien-tu-dia": "huyet-chien-tu-dia.html", "huong-dan-dien-thoai": "huong-dan-dien-thoai.html", "he-thong-nhan-vat": "he-thong-nhan-vat.html", "tai-khoan": "tai-khoan.html", "huong-dan-nap": "huong-dan-nap.html", "chuoc-point-reset": "chuoc-point-reset.html", "he-thong-vat-pham": "he-thong-vat-pham.html", "dua-top": "dua-top.html", "ho-tro": "ho-tro.html", "vip": "vip.html", "uu-dai-mo-may-chu": "uu-dai-mo-may-chu.html"};
+  var cucBo = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  var p = location.pathname.replace(/index\.html$/, '');
+  var slug = cucBo ? (p.match(/([a-z0-9-]+)\.html$/) || [])[1] : (p.match(/^\/([a-z0-9-]+)\/$/) || [])[1];
+  if (cucBo && slug) { for (var k in HTML) if (HTML[k] === slug + '.html') slug = k; }
+  if (!slug) return;
+  slug = CUNG[slug] || slug;
+  var g, i = -1;
+  for (var a = 0; a < N.length && i < 0; a++) for (var b = 0; b < N[a][2].length; b++) if (N[a][2][b][0] === slug) { g = N[a]; i = b; break; }
+  if (i < 0) return;
+  var url = function (s) { return cucBo ? (HTML[s] || s + '.html') : '/' + s + '/'; };
+  var cn = cucBo ? 'cam-nang.html#' + g[1] : '/cam-nang/#' + g[1];
+  var ds = g[2], truoc = ds[i - 1], sau = ds[i + 1];
+  var css = '#tt-tiep{max-width:1060px;margin:18px auto 6px;padding:0 14px;font-family:"Be Vietnam Pro","BVP du phong win","BVP du phong","Segoe UI",system-ui,sans-serif}'
+    + '#tt-tiep .tt-o{padding:14px 16px;border:1px solid rgba(226,200,143,.45);border-radius:10px;background:rgba(20,10,6,.82)}'
+    + '#tt-tiep .tt-vi{margin:0 0 10px;text-align:center;font-size:13.5px;color:#cfc4b0}#tt-tiep .tt-vi a{color:#f3dfa6}'
+    + '#tt-tiep .tt-hang{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}'
+    + '#tt-tiep .tt-hang a{display:flex;flex-direction:column;justify-content:center;min-height:62px;padding:10px 14px;border-radius:8px;text-decoration:none;border:1px solid rgba(226,200,143,.4);background:rgba(8,4,3,.6);color:#efdcb2}'
+    + '#tt-tiep .tt-hang a small{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#cbb994}#tt-tiep .tt-hang a b{font-size:15.5px;color:#f6dc8f}'
+    + '#tt-tiep .tt-hang a.tt-sau{grid-column:2;text-align:right;border-color:#f3c96a;background:linear-gradient(90deg,rgba(60,24,8,.85),rgba(120,46,14,.85))}'
+    + '#tt-tiep .tt-hang a:hover{filter:brightness(1.2)}#tt-tiep .tt-hang a:focus-visible{outline:2px solid #f3c96a;outline-offset:2px}'
+    + '@media(max-width:560px){#tt-tiep .tt-hang{grid-template-columns:minmax(0,1fr)}#tt-tiep .tt-hang a.tt-sau{grid-column:1;order:-1}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+  var h = '<div class="tt-o"><p class="tt-vi"><a href="' + cn + '">' + g[0] + '</a> · Bài ' + (i + 1) + '/' + ds.length + '</p><div class="tt-hang">'
+    + (truoc ? '<a class="tt-truoc" href="' + url(truoc[0]) + '"><small>‹ Bài trước</small><b>' + truoc[1] + '</b></a>' : '')
+    + (sau ? '<a class="tt-sau" href="' + url(sau[0]) + '"><small>Tiếp theo ›</small><b>' + sau[1] + '</b></a>'
+           : '<a class="tt-sau" href="' + cn.replace(/#.*$/, '') + '"><small>Hết phần ' + g[0] + ' ›</small><b>Về Cẩm nang</b></a>')
+    + '</div></div>';
+  var nav = document.createElement('nav'); nav.id = 'tt-tiep'; nav.setAttribute('aria-label', 'Bài trước, bài tiếp theo'); nav.innerHTML = h;
+  var cuoi = document.querySelectorAll('section.muc, section.buoc-anh, section.phu-luc, section.dt-ngan');
+  var moc = cuoi.length ? cuoi[cuoi.length - 1] : null;
+  if (moc) moc.parentNode.insertBefore(nav, moc.nextSibling); else document.body.appendChild(nav);
+})();
+</script></body>
+</html>

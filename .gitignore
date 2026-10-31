@@ -1,0 +1,44 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution
+dist/
+build/
+docs/api/
+node_modules/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local agent tooling
+.codex/
+.devin/
+.factory/
+codedb.snapshot
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage/
+.vitest-reports/
+test-results.xml
+.turbo/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
