@@ -1,0 +1,17 @@
+# MU mobile manifest v1 — gop-den85 = gop-den84 (395e0cff) + updates85-sukien77-i78 (Text_eng.bmd #77 + #78 + HCTD SS6 v2)
+#patch=001
+data=20261031
+app_min=1
+app_url=
+Assets/Update.yan|20efa0b0|14033790
+Assets/configs.yan|7620a3d7|2018510
+Assets/effects.yan|9c9fe4ff|12982331
+Assets/items.yan|b8635e8b|37882886
+Assets/maps.yan|b19bfe8a|54823630
+Assets/monsters.yan|1d25956a|41258199
+Assets/music.yan|e6d5b97f|48120717
+Assets/objects.yan|d0d96a04|89147949
+Assets/player.yan|cd6ffed1|29481044
+Assets/sounds.yan|049b8835|22906663
+Assets/ui.yan|f82f9efe|46135116
+Assets/updates00-gop-den85.yan|ff7c24b4|46724944
